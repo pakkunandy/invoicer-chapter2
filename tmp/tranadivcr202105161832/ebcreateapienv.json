@@ -1,0 +1,18 @@
+{
+    "EnvironmentName": "tranadivcr202105161832-invoicer-api",
+    "EnvironmentId": "e-j6nmpfk3ia",
+    "ApplicationName": "tranadivcr202105161832",
+    "SolutionStackName": "64bit Amazon Linux 2018.03 v2.16.7 running Docker 19.03.13-ce",
+    "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-1::platform/Docker running on 64bit Amazon Linux/2.16.7",
+    "Description": "Invoicer API environment",
+    "DateCreated": "2021-05-17T06:56:42.909Z",
+    "DateUpdated": "2021-05-17T06:56:42.909Z",
+    "Status": "Launching",
+    "Health": "Grey",
+    "Tier": {
+        "Name": "WebServer",
+        "Type": "Standard",
+        "Version": "1.0"
+    },
+    "EnvironmentArn": "arn:aws:elasticbeanstalk:eu-west-1:587581804262:environment/tranadivcr202105161832/tranadivcr202105161832-invoicer-api"
+}

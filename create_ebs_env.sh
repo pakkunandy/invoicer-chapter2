@@ -3,7 +3,7 @@
 # requires: pip install awscli awsebcli
 
 # uncomment to debug
-#set -x
+set -x
 
 fail() {
     echo configuration failed
@@ -88,7 +88,7 @@ aws elasticbeanstalk create-environment \
     --description "Invoicer API environment" \
     --tags "Key=Owner,Value=$(whoami)" \
     --solution-stack-name "$dockerstack" \
-    --option-settings file://tmp/$identifier/ebs-options.json \
+    --option-settings file://$(pwd)/tmp/$identifier/ebs-options.json \
     --tier "Name=WebServer,Type=Standard,Version=''" > tmp/$identifier/ebcreateapienv.json || fail
 apieid=$(jq -r '.EnvironmentId' tmp/$identifier/ebcreateapienv.json)
 echo "API environment $apieid is being created"
